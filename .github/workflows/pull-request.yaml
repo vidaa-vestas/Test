@@ -1,11 +1,11 @@
 name: Pull Request Example
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - typescript-project/**
+  #pull_request:
+   # branches:
+    #  - main
+    #paths:
+     # - typescript-project/**
   workflow_dispatch:
     
 jobs: 
@@ -17,7 +17,7 @@ jobs:
         working-directory: typescript-project
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       #Setup Nodejs
       - name: Setup Node.js 16 
