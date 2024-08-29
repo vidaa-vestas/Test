@@ -17,11 +17,11 @@ jobs:
         working-directory: typescript-project
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       #Setup Nodejs
       - name: Setup Node.js 16 
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with: 
           node-version: "16.x"
           cache: 'npm'
