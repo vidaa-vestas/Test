@@ -1,7 +1,7 @@
-name: Pull Request Example
+name: Merge Example
 
 on:
-  pull_request:
+  push:
     branches:
       - main
     paths:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     
 jobs: 
-  pull-request:
+  merge:
     runs-on: ubuntu-latest
 
     defaults:
@@ -46,3 +46,10 @@ jobs:
       #Run tests
       - name: Run tests
         run: yarn test 
+
+      - run: git config user.email "vidaa@vestas.com"
+      - run: git config user.name "VIDAA"  
+      - run: yarn version --patch --message "Bump version to %s"
+
+      - run: git push 
+      - run: git push --follow-tags
