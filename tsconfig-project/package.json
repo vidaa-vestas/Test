@@ -1,20 +1,20 @@
 {
-	"name": "@devshareacademy/tsconfig-example",
+	"name": "@vidaa-vestas/tsconfig-example",
 	"version": "0.0.8",
 	"description": "Shared TypeScript config for my projects",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/scottwestover/github-actions-basics-course.git",
+		"url": "git+https://github.com/vidaa-vestas/test.git",
 		"directory": "packages/tsconfig-example"
 	},
 	"bugs": {
-		"url": "https://github.com/scottwestover/github-actions-basics-course/issues"
+		"url": "https://github.com/vidaa-vestas/test/issues"
 	},
-	"homepage": "https://github.com/scottwestover/github-actions-basics-course/tsconfig-project/#readme",
+	"homepage": "https://github.com/vidaa-vestas/test/tsconfig-project/#readme",
 	"author": {
-		"name": "Scott Westover",
-		"email": "scottwestover2006@gmail.com"
+		"name": "Vitor Sa",
+		"email": "vidaa@vestas.com"
 	},
 	"main": "tsconfig.json",
 	"files": [
